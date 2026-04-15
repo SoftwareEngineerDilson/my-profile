@@ -1,4 +1,4 @@
-body p {
+/* body p {
   font-size: 14px !important;
   color: rgb(75, 73, 73) !important;
   background-color: white !important;
@@ -8,7 +8,7 @@ body h2 {
 }
 body h3 {
   color: #545454 !important;
-}
+} */
 
 /* Navigation */
 .feature-icon {
@@ -26,6 +26,33 @@ body h3 {
   border-color: grey;
   border-radius: 10px;
 }
+.btn-CV {
+  width: 120px;
+  height: 40px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.dark-mode-btn {
+  width: 140px;
+  height: 40px;
+  margin: 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.dark-mode {
+  text-align: center;
+}
+.cv-btn-image {
+  height: 20px;
+  margin-right: 5px;
+}
 .nav-item {
   color: whitesmoke;
   font-weight: 600;
@@ -38,12 +65,12 @@ body h3 {
 }
 /* Home */
 .home-head-text {
-  color: #545454 !important;
-  font-size: 2.5rem;
+  color: #146c94;
+  font-size: 3rem;
   margin-top: 20px;
 }
 .home-sub-head-text {
-  color: #5454549a !important;
+  color: darkgrey;
   font-size: 1rem;
 }
 .tech-stack-image {
@@ -96,6 +123,10 @@ body h3 {
 /* About Me */
 
 @media (max-width: 780px) {
+  .dark-mode-btn {
+    margin: 10px 0px;
+  }
+
   #carouselExampleDark {
     margin: 20px 20px;
   }
@@ -107,6 +138,10 @@ body h3 {
   /* About Me */
 }
 @media (min-width: 781px) and (max-width: 1200px) {
+  .dark-mode-btn {
+    margin: 10px 0px;
+  }
+
   #carouselExampleDark {
     margin: 20px 80px;
   }
@@ -125,6 +160,5 @@ body h3 {
   .education-container {
     margin: 20px 250px;
   }
-
   /* About Me */
 }

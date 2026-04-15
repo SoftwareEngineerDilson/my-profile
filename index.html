@@ -59,8 +59,25 @@
                 class="btn-link-text"
                 href="https://softwareengineerdilson.github.io/resume/"
               >
-                <div class="btn btn-primary">View CV</div>
+                <div class="btn btn-light btn-CV">
+                  <img
+                    class="cv-btn-image"
+                    src="./images/box-arrow-up-right.svg"
+                    alt="arrow-up-image"
+                  />View CV
+                </div>
               </a>
+              <div class="dark-mode">
+                <a
+                  id="btn"
+                  class="btn btn-light dark-mode-btn"
+                  role="button"
+                  data-bs-toggle="button"
+                  onclick="enableDarkMode()"
+                  aria-pressed="true"
+                  >Dark Mode</a
+                >
+              </div>
             </div>
           </div>
         </nav>
@@ -70,9 +87,7 @@
     <!-- Home -->
     <section id="home-page">
       <div class="px-4 text-center mt-5">
-        <h1 class="display-4 fw-bold text-body-emphasis home-head-text">
-          I'm Dilson
-        </h1>
+        <h1 class="display-4 fw-bold home-head-text">I'm Dilson</h1>
         <h3 class="home-sub-head-text">a Software Engineer</h3>
         <div class="col-lg-6 mx-auto py-2">
           <p class="mb-4 text-body-secondary home-description-text">
@@ -360,4 +375,22 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"
   ></script>
+  <script>
+    let count = 0;
+    function enableDarkMode() {
+      count++;
+
+      // Access the <html> element
+      const root = document.documentElement;
+      const btn = document.getElementById("btn");
+      if (count % 2 !== 0) {
+        // Add a new data property: data-theme="dark"
+        root.setAttribute("data-bs-theme", "dark");
+        btn.setAttribute("class", "btn btn-dark dark-mode-btn");
+      } else {
+        root.removeAttribute("data-bs-theme");
+        btn.setAttribute("class", "btn btn-light dark-mode-btn");
+      }
+    }
+  </script>
 </html>
