@@ -381,48 +381,6 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"
   ></script>
-  <script>
-    let count = 0;
-    function enableDarkMode() {
-      count++;
-
-      // Access the <html> element
-      const root = document.documentElement;
-      const btn = document.getElementById("btn");
-      if (count % 2 !== 0) {
-        // Add a new data property: data-theme="dark"
-        root.setAttribute("data-bs-theme", "dark");
-        btn.setAttribute("class", "btn btn-dark dark-mode-btn");
-      } else {
-        root.removeAttribute("data-bs-theme");
-        btn.setAttribute("class", "btn btn-light dark-mode-btn");
-      }
-    }
-
-    let lastScrollTop = 0;
-
-    // Initialize the Bootstrap Collapse instance
-    const navMenu = document.getElementById("navbarSupportedContent");
-    const bsCollapse = new bootstrap.Collapse(navMenu, { toggle: false });
-
-    window.addEventListener(
-      "scroll",
-      function () {
-        let currentScroll =
-          window.pageYOffset || document.documentElement.scrollTop;
-
-        // Detect Scroll Up
-        if (currentScroll < lastScrollTop) {
-          // Check if the menu is currently visible (Bootstrap adds the 'show' class)
-          if (navMenu.classList.contains("show")) {
-            bsCollapse.hide();
-          }
-        }
-
-        // Update last scroll position (avoiding negative values for mobile bounce)
-        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
-      },
-      { passive: true },
-    );
-  </script>
+  <script src="./script/dark-mode.js" defer></script>
+  <script src="./script/nav-bar.js" defer></script>
 </html>
