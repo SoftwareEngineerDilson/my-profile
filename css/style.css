@@ -4,7 +4,7 @@ html {
 }
 body p,
 .experience_desc {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 /* Navigation */
@@ -166,21 +166,25 @@ body p,
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  margin: 20px 0px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
+
 /* Footer */
 .footer-container {
   display: flex;
-  /* flex-direction: row; */
+  flex-direction: column-reverse;
   justify-content: space-around;
   align-items: center;
 }
 .footer-container p {
   margin: 0;
-  padding: 20px 0px;
+  padding-bottom: 20px;
+  font-size: 18px;
 }
 .footer {
   background: linear-gradient(90deg, #00fff0, #0083fe);
+  margin-top: 20px;
 }
 
 @media (max-width: 780px) {
