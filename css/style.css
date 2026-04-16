@@ -126,23 +126,46 @@
 
 /* About Me */
 .feature-icon {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border-radius: 0.75rem;
+}
+.school-icon-coontainer,
+.experience-icon-container,
+.get-in-touch-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: center;
 }
 .school {
   margin-bottom: 20px;
+}
+.school a {
+  text-decoration: none;
 }
 .school-name,
 .company {
   margin: 0px;
 }
+.company a {
+  text-decoration: none;
+}
 
 .social {
   width: 50px;
   height: 50px;
+  margin-right: 20px;
 }
-
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 20px 0px;
+}
+/* Footer */
 .footer-container {
   display: flex;
   flex-direction: column;
