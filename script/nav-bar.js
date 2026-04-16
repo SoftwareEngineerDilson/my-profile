@@ -16,12 +16,20 @@ window.addEventListener(
   function () {
     let currentScroll =
       window.pageYOffset || document.documentElement.scrollTop;
+    let scTop = document.documentElement.scrollTop;
+    let scDown = document.documentElement.scrollHeight;
 
     // Detect Scroll Up
-    if (currentScroll > lastScrollTop) {
+    if ((currentScroll < lastScrollTop) & (scDown > 3287)) {
       // Check if the menu is currently visible (Bootstrap adds the 'show' class)
       if (navMenu.classList.contains("show")) {
         bsCollapse.hide();
+      }
+    } else {
+      if ((scDown > 3287) & !navMenu.classList.contains("show")) {
+        bsCollapse.hide();
+      } else {
+        bsCollapse.Collapse();
       }
     }
 
