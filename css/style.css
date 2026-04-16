@@ -1,3 +1,12 @@
+html {
+  scroll-padding-top: 400px; /* Global offset for all anchor links */
+  scroll-behavior: smooth; /* Optional: adds a nice sliding effect */
+}
+body p,
+.experience_desc {
+  font-size: 14px;
+}
+
 /* Navigation */
 .profile-logo {
   font-style: normal;
@@ -63,15 +72,6 @@
 /* Home */
 #home-page {
   margin-bottom: 50px;
-}
-.home-head-text {
-  color: #146c94;
-  font-size: 3rem;
-  margin-top: 20px;
-}
-.home-sub-head-text {
-  color: darkgrey;
-  font-size: 1.5rem;
 }
 .tech-stack-image {
   border-style: none;
@@ -139,6 +139,9 @@
   align-content: flex-start;
   align-items: center;
 }
+.school-icon-coontainer {
+  margin: 20px 0px;
+}
 .school {
   margin-bottom: 20px;
 }
@@ -154,24 +157,27 @@
 }
 
 .social {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
 }
 .social-links {
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: flex-end;
   align-items: center;
   margin: 20px 0px;
 }
 /* Footer */
 .footer-container {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
+  /* flex-direction: row; */
+  justify-content: space-around;
   align-items: center;
+}
+.footer-container p {
+  margin: 0;
+  padding: 20px 0px;
 }
 .footer {
   background: linear-gradient(90deg, #00fff0, #0083fe);
