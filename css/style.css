@@ -81,12 +81,8 @@ body p,
   color: whitesmoke;
 }
 /* Home */
-#home-page {
-  margin-bottom: 50px;
-}
 .home-sub-head-text {
   font-size: 18px;
-  color: lightgray;
   font-weight: 600;
 }
 .home-description-text {
@@ -99,7 +95,6 @@ body p,
 
 /* Projects */
 #project {
-  margin-bottom: 50px;
   padding: 20px 0px;
 }
 #carouselExampleDark {
